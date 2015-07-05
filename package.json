@@ -1,7 +1,7 @@
 {
   "name": "debugger",
   "main": "./lib/debugger",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Allows for debugging of your project.",
   "keywords": [
     "debug",
