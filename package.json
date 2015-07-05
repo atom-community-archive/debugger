@@ -1,0 +1,33 @@
+{
+  "name": "debugger",
+  "main": "./lib/debugger",
+  "version": "0.0.0",
+  "description": "Allows for debugging of your project.",
+  "keywords": [
+    "debug",
+    "test"
+  ],
+  "repository": "https://github.com/atom-community/debugger",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "author": "Joe Fitzgerald <jfitzgerald@pivotal.io> (http://github.com/joefitzgerald)",
+  "homepage": "https://atom.io/packages/debugger",
+  "bugs": {
+    "url": "https://github.com/atom-community/debugger/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "coffeelint": ">=1.8.1",
+    "temp": ">=0.8.1",
+    "underscore-plus": "1.x"
+  },
+  "consumedServices": {
+    "debugger.provider": {
+      "versions": {
+        "0.1.0": "consumeProvider"
+      }
+    }
+  }
+}
