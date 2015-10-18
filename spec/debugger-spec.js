@@ -1,21 +1,19 @@
-'use babel';
-
-import Debugger from '../lib/debugger';
+'use babel'
 
 describe('Debugger', () => {
-  let debuggerMain;
+  let debuggerMain
 
   beforeEach(() => {
     waitsForPromise(() => {
       return atom.packages.activatePackage('debugger').then((pack) => {
-        debuggerMain = pack.mainModule;
-      });
-    });
-  });
+        debuggerMain = pack.mainModule
+      })
+    })
+  })
 
   describe('when the debugger package is activated', () => {
     it('activates successfully', () => {
-      expect(debuggerMain).toBeDefined();
-    });
-  });
-});
+      expect(debuggerMain).toBeDefined()
+    })
+  })
+})
