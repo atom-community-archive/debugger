@@ -1,0 +1,20 @@
+version: "{build}"
+
+install:
+  - appveyor DownloadFile https://atom.io/download/windows -FileName AtomSetup.exe
+  - AtomSetup.exe /silent
+  - set PATH=%LOCALAPPDATA%\atom\bin;c:\go\bin;%PATH%
+
+build_script:
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - SET PATH=%LOCALAPPDATA%\atom\bin;%PATH%
+  - apm clean
+  - apm install
+  - apm install environment
+
+test_script:
+  - cd %APPVEYOR_BUILD_FOLDER%
+  - SET PATH=%LOCALAPPDATA%\atom\bin;%PATH%
+  - apm test
+
+deploy: off
