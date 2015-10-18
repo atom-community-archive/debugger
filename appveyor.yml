@@ -1,4 +1,5 @@
 version: "{build}"
+clone_depth: 10
 
 install:
   - appveyor DownloadFile https://atom.io/download/windows -FileName AtomSetup.exe
