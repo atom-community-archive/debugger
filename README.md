@@ -1,4 +1,4 @@
-# debugger package
+# debugger package [![Build Status](https://travis-ci.org/atom-community/debugger.svg)](https://travis-ci.org/atom-community/debugger) [![Build status](https://ci.appveyor.com/api/projects/status/85q32qiat29ef26s?svg=true)](https://ci.appveyor.com/project/joefitzgerald/debugger)
 
 A short description of your package.
 
